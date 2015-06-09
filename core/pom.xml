@@ -1,36 +1,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+     <parent>
+        <groupId>com.google.code.simple-spring-memcached</groupId>
+        <artifactId>jmemcached-parent</artifactId>
+        <version>1.0.2-SNAPSHOT</version>
+    </parent>
     <artifactId>jmemcached-core</artifactId>
     <packaging>jar</packaging>
     <name>jmemcached Core</name>
     <description>Core implementation of the cache daemon</description>
 
-    <parent>
-        <groupId>com.inin.jmemcached</groupId>
-        <artifactId>jmemcached-parent</artifactId>
-        <version>1.0.2</version>
-        <relativePath>../</relativePath>
-    </parent>
-
     <dependencies>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-
         <dependency>
             <artifactId>slf4j-api</artifactId>
             <groupId>org.slf4j</groupId>
         </dependency>
-
-      
-        
         <dependency>
             <groupId>org.jboss.netty</groupId>
             <artifactId>netty</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
     </dependencies>
 
     <reporting>
@@ -41,6 +34,4 @@
             </plugin>
         </plugins>
     </reporting>
-
-
 </project>

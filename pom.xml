@@ -2,18 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.inin.jmemcached</groupId>
+   	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>9</version>
+	</parent>
+    <groupId>com.google.code.simple-spring-memcached</groupId>
     <artifactId>jmemcached-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.2</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>jmemcached Parent Project</name>
-    <url>https://github.com/MyPureCloud/jmemcache-daemon</url>
+    <url>https://github.com/ragnor/jmemcache-daemon</url>
     <description>Caching server speaking the memcached protocol, written in Java.</description>
 
     <scm>
-        <connection>scm:git:git@github.com:MyPureCloud/jmemcache-daemon.git</connection>
-        <developerConnection>scm:git:git@github.com:MyPureCloud/jmemcache-daemon.git</developerConnection>
-        <url>git@github.com:MyPureCloud/jmemcache-daemon.git</url>
+        <connection>scm:git:git@github.com:ragnor/jmemcache-daemon.git</connection>
+        <developerConnection>scm:git:git@github.com:ragnor/jmemcache-daemon.git</developerConnection>
+        <url>git@github.com:ragnor/jmemcache-daemon.git</url>
     </scm>
 
     <modules>
@@ -162,36 +167,32 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.8.2</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
                 <artifactId>slf4j-api</artifactId>
                 <groupId>org.slf4j</groupId>
                 <version>1.5.11</version>
             </dependency>
-
             <dependency>
                 <artifactId>slf4j-jdk14</artifactId>
                 <groupId>org.slf4j</groupId>
                 <version>1.5.11</version>
             </dependency>
-
             <dependency>
                 <artifactId>slf4j-log4j12</artifactId>
                 <groupId>org.slf4j</groupId>
                 <version>1.5.11</version>
             </dependency>
-
             <dependency>
                 <groupId>org.jboss.netty</groupId>
                 <artifactId>netty</artifactId>
                 <version>3.2.3.Final</version>
             </dependency>
 
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.8.2</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
