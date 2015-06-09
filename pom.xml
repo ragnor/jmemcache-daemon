@@ -136,33 +136,14 @@
                 <role>maintainer</role>
             </roles>
         </developer>
+        <developer>
+			<id>ragnor84</id>
+			<name>Jakub Białek</name>
+			<roles>
+				<role>maintainer</role>
+			</roles>
+		</developer>
     </developers>
-
-<!--     <distributionManagement> -->
-<!--         <repository> -->
-<!--             <id>sonatype-release</id> -->
-<!--             <name>Sonatype Release</name> -->
-<!--             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url> -->
-<!--         </repository> -->
-<!--         <snapshotRepository> -->
-<!--             <id>sonatype-snapshot</id> -->
-<!--             <name>Sonatype Snapshot Repository</name> -->
-<!--             <url>https://oss.sonatype.org/content/repositories/snapshots</url> -->
-<!--         </snapshotRepository> -->
-<!--     </distributionManagement> -->
-
-    <distributionManagement>
-        <repository>
-            <id>inin-release</id>
-            <name>ININ Release Repository</name>
-            <url>https://purecloud.artifactoryonline.com/purecloud/inin-release</url>
-        </repository>
-        <snapshotRepository>
-            <id>inin-snapshot</id>
-            <name>ININ Snapshot Repository</name>
-            <url>https://purecloud.artifactoryonline.com/purecloud/inin-snapshot</url>
-        </snapshotRepository>
-    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>
