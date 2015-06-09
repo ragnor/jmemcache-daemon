@@ -9,7 +9,7 @@
     <groupId>com.google.code.simple-spring-memcached</groupId>
     <artifactId>jmemcached-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
     <name>jmemcached Parent Project</name>
     <url>https://github.com/ragnor/jmemcache-daemon</url>
     <description>Caching server speaking the memcached protocol, written in Java.</description>
